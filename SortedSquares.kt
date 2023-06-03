@@ -11,14 +11,16 @@ package challenges
 
 // Optimal solution is O(n) time -> not O(nlogn) this is what happens when you sort
 fun sortedSquares(list: List<Int>): List<Int> {
-    val result = mutableListOf<Int>()
+     // Creating mutable list as values will change
+     val squaredList = mutableListOf<Int>()
 
-    for (input in list) {
-        if (input < 0) {
-            // Need to handle things differently if the current input is negative ?
-        }
-        result.add(input * input);
+     // Iterating whole list
+     for (num in list) {
+         // Squaring numbers
+         val square = num * num
+ 
+         // Adding values to the list
+         squaredList.add(square)
+     }
+     return squaredList
     }
-    // Dennis sorted the list at this point (not ideal)
-    return result
-}
