@@ -22,5 +22,7 @@ fun sortedSquares(list: List<Int>): List<Int> {
          // Adding values to the list
          squaredList.add(square)
      }
+     squaredList.sort()
+
      return squaredList
     }
